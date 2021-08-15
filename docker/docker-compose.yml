@@ -1,0 +1,28 @@
+services:
+  test01:
+    image: 'boksb/ansible-demo'
+    build: .
+    restart: always
+    ports:
+      - "1337:22"
+      - "8037:80"
+    environment:
+      - PSWD=wtf4711
+  prod01:
+    image: 'boksb/ansible-demo'
+    build: .
+    restart: always
+    ports:
+      - "1338:22"
+      - "8038:80"
+    environment:
+      - PSWD=wtf4711
+  prod02:
+    image: 'boksb/ansible-demo'
+    build: .
+    restart: always
+    ports:
+      - "1339:22"
+      - "8039:80"
+    environment:
+      - PSWD=wtf4711

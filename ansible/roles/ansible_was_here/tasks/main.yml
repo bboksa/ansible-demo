@@ -1,0 +1,5 @@
+---
+- name: Ensure ansible was here
+  copy:
+    dest: "/root/ansible_was_here"
+    content: "ansible was here"

@@ -1,0 +1,7 @@
+---
+- name: Test Playbook
+  hosts: all
+  roles:
+    - ansible_was_here
+    - openrc
+    - nginx

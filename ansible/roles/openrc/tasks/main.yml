@@ -1,0 +1,12 @@
+---
+- name: Ensure openrc is installed
+  apk:
+    name: openrc
+
+- name: Ensure rc-status is callable
+  command: rc-status
+
+- name: Ensure openrc is usable as planned for this demo (quick hack)
+  file:
+    path: "/run/openrc/softlevel"
+    state: touch
